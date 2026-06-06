@@ -2,29 +2,32 @@ from kafka import KafkaConsumer
 import json
 from collections import defaultdict
 
-stats = defaultdict(int)
-
 consumer = KafkaConsumer(
     'sensor-data',
     bootstrap_servers='localhost:9092',
-    value_deserializer=lambda m:
-        json.loads(m.decode('utf-8')),
+    value_deserializer=lambda m: json.loads(m.decode('utf-8')),
     auto_offset_reset='earliest'
 )
 
-print("MASTER STARTED")
+count = defaultdict(int)
+total = defaultdict(int)
 
 for message in consumer:
 
     data = message.value
 
     sensor = data["sensor_id"]
+    value = data["value"]
 
-    stats[sensor] += 1
+    count[sensor] += 1
+    total[sensor] += value
 
     print("\n===== MASTER REPORT =====")
 
-    for key, value in stats.items():
+    for s in count:
+
+        avg = total[s] / count[s]
+
         print(
-            f"{key}: {value} messages"
+            f"{s}: {count[s]} messages | Average = {avg:.2f}"
         )

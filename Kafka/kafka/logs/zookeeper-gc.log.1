@@ -1,0 +1,47 @@
+[2026-06-06T13:26:18.693+0000][gc,init] CardTable entry size: 512
+[2026-06-06T13:26:18.693+0000][gc     ] Using G1
+[2026-06-06T13:26:18.698+0000][gc,init] Version: 25.0.2+10-LTS (release)
+[2026-06-06T13:26:18.698+0000][gc,init] CPUs: 2 total, 2 available
+[2026-06-06T13:26:18.698+0000][gc,init] Memory: 7944M
+[2026-06-06T13:26:18.698+0000][gc,init] Large Page Support: Disabled
+[2026-06-06T13:26:18.698+0000][gc,init] NUMA Support: Disabled
+[2026-06-06T13:26:18.698+0000][gc,init] Compressed Oops: Enabled (32-bit)
+[2026-06-06T13:26:18.698+0000][gc,init] Heap Region Size: 1M
+[2026-06-06T13:26:18.698+0000][gc,init] Heap Min Capacity: 512M
+[2026-06-06T13:26:18.698+0000][gc,init] Heap Initial Capacity: 512M
+[2026-06-06T13:26:18.698+0000][gc,init] Heap Max Capacity: 512M
+[2026-06-06T13:26:18.698+0000][gc,init] Pre-touch: Disabled
+[2026-06-06T13:26:18.698+0000][gc,init] Parallel Workers: 2
+[2026-06-06T13:26:18.698+0000][gc,init] Concurrent Workers: 1
+[2026-06-06T13:26:18.698+0000][gc,init] Concurrent Refinement Workers: 2
+[2026-06-06T13:26:18.698+0000][gc,init] Periodic GC: Disabled
+[2026-06-06T13:26:18.698+0000][gc,init] G1 Time-Based Heap Sizing enabled (uncommit-only)
+[2026-06-06T13:26:18.698+0000][gc,init] Evaluation Interval: 60s, Uncommit Delay: 300s, Min Regions To Uncommit: 10
+[2026-06-06T13:26:18.703+0000][gc,metaspace] CDS archive(s) mapped at: [0x000000004d000000-0x000000004dd8d000-0x000000004dd8d000), size 14209024, SharedBaseAddress: 0x000000004d000000, ArchiveRelocationMode: 1.
+[2026-06-06T13:26:18.703+0000][gc,metaspace] Compressed class space mapped at: 0x000000004e000000-0x000000008e000000, reserved size: 1073741824
+[2026-06-06T13:26:18.703+0000][gc,metaspace] UseCompressedClassPointers 1, UseCompactObjectHeaders 0
+[2026-06-06T13:26:18.703+0000][gc,metaspace] Narrow klass pointer bits 32, Max shift 3
+[2026-06-06T13:26:18.703+0000][gc,metaspace] Narrow klass base: 0x000000004d000000, Narrow klass shift: 0
+[2026-06-06T13:26:18.703+0000][gc,metaspace] Encoding Range: [0x000000004d000000 - 0x000000014d000000), (4294967296 bytes)
+[2026-06-06T13:26:18.703+0000][gc,metaspace] Klass Range:    [0x000000004d001000 - 0x000000008e000000), (1090514944 bytes)
+[2026-06-06T13:26:18.703+0000][gc,metaspace] Klass ID Range:  [4096 - 1090519033) (1090514937)
+[2026-06-06T13:26:18.703+0000][gc,metaspace] Protection zone: [0x000000004d000000 - 0x000000004d001000), (4096 bytes)
+[2026-06-06T13:26:19.605+0000][gc,start    ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
+[2026-06-06T13:26:19.606+0000][gc,task     ] GC(0) Using 2 workers of 2 for evacuation
+[2026-06-06T13:26:19.612+0000][gc,phases   ] GC(0)   Pre Evacuate Collection Set: 0.10ms
+[2026-06-06T13:26:19.613+0000][gc,phases   ] GC(0)   Merge Heap Roots: 0.03ms
+[2026-06-06T13:26:19.613+0000][gc,phases   ] GC(0)   Evacuate Collection Set: 5.86ms
+[2026-06-06T13:26:19.613+0000][gc,phases   ] GC(0)   Post Evacuate Collection Set: 0.32ms
+[2026-06-06T13:26:19.613+0000][gc,phases   ] GC(0)   Other: 0.29ms
+[2026-06-06T13:26:19.613+0000][gc,heap     ] GC(0) Eden regions: 25->0(21)
+[2026-06-06T13:26:19.613+0000][gc,heap     ] GC(0) Survivor regions: 0->4(4)
+[2026-06-06T13:26:19.613+0000][gc,heap     ] GC(0) Old regions: 2->6
+[2026-06-06T13:26:19.613+0000][gc,heap     ] GC(0) Humongous regions: 0->0
+[2026-06-06T13:26:19.613+0000][gc,metaspace] GC(0) Metaspace: 7601K(7808K)->7601K(7808K) NonClass: 6784K(6912K)->6784K(6912K) Class: 816K(896K)->816K(896K)
+[2026-06-06T13:26:19.613+0000][gc          ] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 26M->8M(512M) 8.084ms
+[2026-06-06T13:26:19.613+0000][gc,cpu      ] GC(0) User=0.00s Sys=0.00s Real=0.00s
+[2026-06-06T13:26:54.824+0000][gc,exit     ] Heap
+[2026-06-06T13:26:54.825+0000][gc,exit     ]  garbage-first heap   total reserved 524288K, committed 524288K, used 12443K [0x00000000e0000000, 0x0000000100000000)
+[2026-06-06T13:26:54.825+0000][gc,exit     ]   region size 1024K, 8 young (8192K), 4 survivors (4096K)
+[2026-06-06T13:26:54.825+0000][gc,exit     ]  Metaspace       used 7995K, committed 8128K, reserved 1114112K
+[2026-06-06T13:26:54.825+0000][gc,exit     ]   class space    used 875K, committed 960K, reserved 1048576K

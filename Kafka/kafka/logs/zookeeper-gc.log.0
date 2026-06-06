@@ -1,0 +1,48 @@
+[2026-06-06T13:07:39.087+0000][gc,init] CardTable entry size: 512
+[2026-06-06T13:07:39.087+0000][gc     ] Using G1
+[2026-06-06T13:07:39.092+0000][gc,init] Version: 25.0.2+10-LTS (release)
+[2026-06-06T13:07:39.092+0000][gc,init] CPUs: 2 total, 2 available
+[2026-06-06T13:07:39.092+0000][gc,init] Memory: 7944M
+[2026-06-06T13:07:39.092+0000][gc,init] Large Page Support: Disabled
+[2026-06-06T13:07:39.092+0000][gc,init] NUMA Support: Disabled
+[2026-06-06T13:07:39.092+0000][gc,init] Compressed Oops: Enabled (32-bit)
+[2026-06-06T13:07:39.092+0000][gc,init] Heap Region Size: 1M
+[2026-06-06T13:07:39.092+0000][gc,init] Heap Min Capacity: 512M
+[2026-06-06T13:07:39.092+0000][gc,init] Heap Initial Capacity: 512M
+[2026-06-06T13:07:39.092+0000][gc,init] Heap Max Capacity: 512M
+[2026-06-06T13:07:39.092+0000][gc,init] Pre-touch: Disabled
+[2026-06-06T13:07:39.092+0000][gc,init] Parallel Workers: 2
+[2026-06-06T13:07:39.092+0000][gc,init] Concurrent Workers: 1
+[2026-06-06T13:07:39.092+0000][gc,init] Concurrent Refinement Workers: 2
+[2026-06-06T13:07:39.092+0000][gc,init] Periodic GC: Disabled
+[2026-06-06T13:07:39.092+0000][gc,init] G1 Time-Based Heap Sizing enabled (uncommit-only)
+[2026-06-06T13:07:39.092+0000][gc,init] Evaluation Interval: 60s, Uncommit Delay: 300s, Min Regions To Uncommit: 10
+[2026-06-06T13:07:39.097+0000][gc,metaspace] CDS archive(s) mapped at: [0x000000005a000000-0x000000005ad8d000-0x000000005ad8d000), size 14209024, SharedBaseAddress: 0x000000005a000000, ArchiveRelocationMode: 1.
+[2026-06-06T13:07:39.097+0000][gc,metaspace] Compressed class space mapped at: 0x000000005b000000-0x000000009b000000, reserved size: 1073741824
+[2026-06-06T13:07:39.097+0000][gc,metaspace] UseCompressedClassPointers 1, UseCompactObjectHeaders 0
+[2026-06-06T13:07:39.097+0000][gc,metaspace] Narrow klass pointer bits 32, Max shift 3
+[2026-06-06T13:07:39.097+0000][gc,metaspace] Narrow klass base: 0x000000005a000000, Narrow klass shift: 0
+[2026-06-06T13:07:39.097+0000][gc,metaspace] Encoding Range: [0x000000005a000000 - 0x000000015a000000), (4294967296 bytes)
+[2026-06-06T13:07:39.097+0000][gc,metaspace] Klass Range:    [0x000000005a001000 - 0x000000009b000000), (1090514944 bytes)
+[2026-06-06T13:07:39.097+0000][gc,metaspace] Klass ID Range:  [4096 - 1090519033) (1090514937)
+[2026-06-06T13:07:39.097+0000][gc,metaspace] Protection zone: [0x000000005a000000 - 0x000000005a001000), (4096 bytes)
+[2026-06-06T13:07:42.098+0000][gc,start    ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
+[2026-06-06T13:07:42.101+0000][gc,task     ] GC(0) Using 2 workers of 2 for evacuation
+[2026-06-06T13:07:42.112+0000][gc,phases   ] GC(0)   Pre Evacuate Collection Set: 0.16ms
+[2026-06-06T13:07:42.112+0000][gc,phases   ] GC(0)   Merge Heap Roots: 0.05ms
+[2026-06-06T13:07:42.112+0000][gc,phases   ] GC(0)   Evacuate Collection Set: 10.18ms
+[2026-06-06T13:07:42.112+0000][gc,phases   ] GC(0)   Post Evacuate Collection Set: 0.26ms
+[2026-06-06T13:07:42.112+0000][gc,phases   ] GC(0)   Other: 3.27ms
+[2026-06-06T13:07:42.112+0000][gc,heap     ] GC(0) Eden regions: 25->0(21)
+[2026-06-06T13:07:42.112+0000][gc,heap     ] GC(0) Survivor regions: 0->4(4)
+[2026-06-06T13:07:42.112+0000][gc,heap     ] GC(0) Old regions: 2->6
+[2026-06-06T13:07:42.112+0000][gc,heap     ] GC(0) Humongous regions: 0->0
+[2026-06-06T13:07:42.112+0000][gc,metaspace] GC(0) Metaspace: 7607K(7744K)->7607K(7744K) NonClass: 6795K(6848K)->6795K(6848K) Class: 811K(896K)->811K(896K)
+[2026-06-06T13:07:42.112+0000][gc          ] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 26M->8M(512M) 14.642ms
+[2026-06-06T13:07:42.112+0000][gc,cpu      ] GC(0) User=0.01s Sys=0.00s Real=0.01s
+[2026-06-06T13:17:41.504+0000][gc,sizing   ] Uncommit evaluation: no heap uncommit needed (evaluation #10)
+[2026-06-06T13:22:54.576+0000][gc,exit     ] Heap
+[2026-06-06T13:22:54.576+0000][gc,exit     ]  garbage-first heap   total reserved 524288K, committed 524288K, used 16230K [0x00000000e0000000, 0x0000000100000000)
+[2026-06-06T13:22:54.576+0000][gc,exit     ]   region size 1024K, 11 young (11264K), 4 survivors (4096K)
+[2026-06-06T13:22:54.576+0000][gc,exit     ]  Metaspace       used 8677K, committed 8896K, reserved 1114112K
+[2026-06-06T13:22:54.576+0000][gc,exit     ]   class space    used 927K, committed 1024K, reserved 1048576K
