@@ -25,7 +25,7 @@ async def process(stream):
             f"[PROCESS] {event.sensor_id} : {event.value}"
         )
 
-        if event.value > 50:
+        if event.value > 80:
             high_value_table[event.sensor_id] += 1
 
             print(
